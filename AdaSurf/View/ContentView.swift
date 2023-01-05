@@ -32,9 +32,10 @@ struct ContentView: View {
                         .font(.subheadline)
                         .multilineTextAlignment(.center)
                 }
-                
                 .font(.subheadline)
                 .foregroundColor(.secondary)
+                
+                Divider()
                 
                 Text("About Taghazout")
                     .font(.title2)
@@ -49,17 +50,6 @@ struct ContentView: View {
         }
     }
 }
-
-var spotsInfo: [String: Any] = [
-    "latitude" : 30.545008,
-    "longitude" : -9.708638,
-    "image" : "TaghazoutSwift",
-    "city": "Taghazout",
-    "country": "Morocco",
-    "continent": "North Africa",
-    "about": ["About Taghazout",
-    "Taghazout (Berber: ⵜⴰⵖⴰⵣⵓⵜ, Taɣazut; Arabic: تاغازوت) is a small fishing village 19 km (12 mi) north of the city of Agadir in southwestern Morocco. The inhabitants are mostly of Berber origin. Fishing, tourism, and the production of Argan oil being the main source of income. In recent years, tourism has been increasing in importance to the local economy and it is a popular surfing destination."]
-]
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
