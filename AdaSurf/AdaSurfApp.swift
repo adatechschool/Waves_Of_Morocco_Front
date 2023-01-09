@@ -8,6 +8,7 @@
 import SwiftUI
 
 @main
+
 struct AdaSurfApp: App {
     var body: some Scene {
         WindowGroup {

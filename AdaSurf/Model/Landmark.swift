@@ -1,4 +1,7 @@
 import Foundation
+import SwiftUI
+import CoreLocation
+
 
 // MARK: - LandmarkListElement
 struct LandmarkListElement: Codable {
@@ -11,7 +14,10 @@ struct LandmarkListElement: Codable {
     let state: String?
     let coordinates: Coordinates
     let landmarkListDescription: String
-    let imageName: String
+    var imageName: String
+    var image: Image {
+            Image(imageName)
+        }
     let park: String?
 
     enum CodingKeys: String, CodingKey {
@@ -36,3 +42,4 @@ enum Country: String, Codable {
 }
 
 typealias LandmarkList = [LandmarkListElement]
+

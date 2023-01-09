@@ -7,7 +7,11 @@
 
 import Foundation
 
+
 struct FileLoader {
+    var landmarks: [LandmarkListElement] = load("landmarkData.json")
+
+
     static func load<T: Decodable>(_ filename: String) -> T {
         let data: Data
         
