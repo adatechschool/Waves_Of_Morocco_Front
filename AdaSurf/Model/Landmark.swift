@@ -4,10 +4,10 @@ import CoreLocation
 
 
 // MARK: - LandmarkListElement
-struct LandmarkListElement: Codable {
+struct Landmark: Codable, Identifiable {
     let name: String
     let country: Country
-    let continent: Continent
+    let continent: String
     let id: Int
     let dangerous: Int
     let isFeatured, isFavorite: Bool
@@ -28,9 +28,6 @@ struct LandmarkListElement: Codable {
     }
 }
 
-enum Continent: String, Codable {
-    case northAfrica = "North Africa"
-}
 
 // MARK: - Coordinates
 struct Coordinates: Codable {
@@ -41,5 +38,5 @@ enum Country: String, Codable {
     case morocco = "Morocco"
 }
 
-typealias LandmarkList = [LandmarkListElement]
+typealias LandmarkList = [Landmark]
 
