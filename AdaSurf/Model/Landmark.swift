@@ -40,8 +40,3 @@ enum Country: String, Codable {
 
 typealias LandmarkList = [Landmark]
 
-
-
-
-
-
