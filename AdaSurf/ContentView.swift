@@ -35,9 +35,10 @@ struct ContentView: View {
                 
                 .font(.subheadline)
                 .foregroundColor(.secondary)
-                
+                Spacer()
                 Text("About Taghazout")
                     .font(.title2)
+                Spacer()
                 Text("Taghazout (Berber: ⵜⴰⵖⴰⵣⵓⵜ, Taɣazut; Arabic: تاغازوت) is a small fishing village 19 km (12 mi) north of the city of Agadir in southwestern Morocco. The inhabitants are mostly of Berber origin. Fishing, tourism, and the production of Argan oil being the main source of income. In recent years, tourism has been increasing in importance to the local economy and it is a popular surfing destination.")
                     .font(.subheadline)
                     .multilineTextAlignment(.leading)
