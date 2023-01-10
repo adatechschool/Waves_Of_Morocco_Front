@@ -9,18 +9,25 @@ import SwiftUI
 import MapKit
 
 struct MapView: View {
-    @State private var region = MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: 30.545008, longitude: -9.708638),
-            span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
-        )
-    var body: some View {
+    var coordinate: CLLocationCoordinate2D
+    @State private var region = MKCoordinateRegion()
+
+        var body: some View {
             Map(coordinateRegion: $region)
-    }
+                .onAppear {
+                    setRegion(coordinate)
+                }
+        }
+    private func setRegion(_ coordinate: CLLocationCoordinate2D) {
+           region = MKCoordinateRegion(
+               center: coordinate,
+               span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
+           )
+       }
 }
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
-            .previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro Max"))
+        MapView(coordinate: CLLocationCoordinate2D(latitude:30.427755, longitude: -9.598107))
     }
 }
