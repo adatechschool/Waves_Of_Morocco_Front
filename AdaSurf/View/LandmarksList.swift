@@ -19,3 +19,4 @@ struct LandmarkList_Previews: PreviewProvider {
       LandmarksList()
     }
   }
+
