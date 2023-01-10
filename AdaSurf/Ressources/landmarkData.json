@@ -12,7 +12,7 @@
             "longitude": -9.2366,
             "latitude": 32.3101
         },
-        "description": "Safi or Asfi (Arabic: آسفي, romanized: ʾāsafī; Berber languages: ⴰⵙⴼⵉ, romanized: asfi) is a city in western Morocco on the Atlantic Ocean. It is the capital of Asfi Province. It recorded a population of 308,508 in the 2014 Moroccan census.[1] The city was occupied by the Portuguese Empire from 1488 to 1541, was the center of Morocco's weaving industry, and became a fortaleza of the Portuguese Crown in 1508.[2] Safi is the main fishing port for the country's sardine industry, and also exports phosphates, textiles and ceramics. During the Second World War, Safi was the site of Operation Blackstone, one of the landing sites for Operation Torch.",
+        "description": "Safi or Asfi (Arabic: آسفي, romanized: ʾāsafī; Berber languages: ⴰⵙⴼⵉ, romanized: asfi) is a city in western Morocco on the Atlantic Ocean. It is the capital of Asfi Province. It recorded a population of 308,508 in the 2014 Moroccan census. The city was occupied by the Portuguese Empire from 1488 to 1541, was the center of Morocco's weaving industry, and became a fortaleza of the Portuguese Crown in 1508. Safi is the main fishing port for the country's sardine industry, and also exports phosphates, textiles and ceramics. During the Second World War, Safi was the site of Operation Blackstone, one of the landing sites for Operation Torch.",
         "imageName": "Safi"
     },
     {
@@ -28,7 +28,8 @@
             "longitude": -9.4562,
             "latitude": 31.37
         },
-        "description": "Essaouira (/ˌɛsəˈwɪərə/ ESS-ə-WEER-ə; Arabic: الصويرة, romanized: aṣ-Ṣawīra; Tachelhit: ⵜⴰⵚⵚⵓⵔⵜ, romanized: Taṣṣort, formerly ⴰⵎⴳⴷⵓⵍ Amegdul), known until the 1960s as Mogador, is a port city in the western Moroccan region of Marakesh-Safi, on the Atlantic coast. It has 77,966 inhabitants as of 2014. The foundation of the city of Essaouira was the work of the Moroccan 'Alawid sultan Mohammed bin Abdallah, who made an original experiment by entrusting it to several renowned architects in 1760, in particular Théodore Cornut and Ahmed al-Inglizi, who designed the city using French captives from the failed French expedition to Larache in 1765, and with the mission of building a city adapted to the needs of foreign merchants. Once built, it continued to grow and experienced a golden age and exceptional development, becoming the country's most important commercial port but also its diplomatic capital between the end of the 18th century and the first half of the 19th century."
+        "description": "Essaouira (/ˌɛsəˈwɪərə/ ESS-ə-WEER-ə; Arabic: الصويرة, romanized: aṣ-Ṣawīra; Tachelhit: ⵜⴰⵚⵚⵓⵔⵜ, romanized: Taṣṣort, formerly ⴰⵎⴳⴷⵓⵍ Amegdul), known until the 1960s as Mogador, is a port city in the western Moroccan region of Marakesh-Safi, on the Atlantic coast. It has 77,966 inhabitants as of 2014. The foundation of the city of Essaouira was the work of the Moroccan 'Alawid sultan Mohammed bin Abdallah, who made an original experiment by entrusting it to several renowned architects in 1760, in particular Théodore Cornut and Ahmed al-Inglizi, who designed the city using French captives from the failed French expedition to Larache in 1765, and with the mission of building a city adapted to the needs of foreign merchants. Once built, it continued to grow and experienced a golden age and exceptional development, becoming the country's most important commercial port but also its diplomatic capital between the end of the 18th century and the first half of the 19th century.",
+        "imageName":"Essaouira"
     },
     {
         "name": "Taghazout",
@@ -43,7 +44,8 @@
             "longitude": -9.708638,
             "latitude": 30.545008
         },
-        "description": "Taghazout (Berber: ⵜⴰⵖⴰⵣⵓⵜ, Taɣazut; Arabic: تاغازوت) is a small fishing village 19 km (12 mi) north of the city of Agadir in southwestern Morocco. The inhabitants are mostly of Berber origin. Fishing, tourism, and the production of Argan oil being the main source of income. In recent years, tourism has been increasing in importance to the local economy and it is a popular surfing destination."
+        "description": "Taghazout (Berber: ⵜⴰⵖⴰⵣⵓⵜ, Taɣazut; Arabic: تاغازوت) is a small fishing village 19 km (12 mi) north of the city of Agadir in southwestern Morocco. The inhabitants are mostly of Berber origin. Fishing, tourism, and the production of Argan oil being the main source of income. In recent years, tourism has been increasing in importance to the local economy and it is a popular surfing destination.",
+        "imageName":"TaghazoutSwift"
     },
     {
         "name": "Agadir",
@@ -54,8 +56,10 @@
         "isFeatured": true,
         "isFavorite": true,
         "state": "Souss-Massa",
-        "latitude": 30.427755,
-        "longitude": -9.598107,
+        "coordinates": {
+            "longitude": -9.598107,
+            "latitude": 30.427755
+        },
         "description": "Agadir (Arabic: أݣادير, romanized: ʾagādīr; Tachelhit: ⴰⴳⴰⴷⵉⵔ) is a major city in Morocco, on the shore of the Atlantic Ocean near the foot of the Atlas Mountains, just north of the point where the Souss River flows into the ocean, and 509 kilometres (316 mi) south of Casablanca. Agadir is the capital of the Agadir Ida-U-Tanan Prefecture and of the Souss-Massa economic region. The majority of its inhabitants speak Berber, one of Morocco's two official languages. Agadir is one of the major urban centres of Morocco. The municipality of Agadir recorded a population of 924,000 in the 2014 Moroccan census.[1] According to the 2004 census, there were 346,106 inhabitants in that year[2] and the population of the Prefecture of Agadir-Ida Outanane was 487,954 inhabitants.[2] Three languages are spoken in the city: Tashelhit (first language of the majority), Moroccan Arabic, and French.",
         "imageName": "Agadir"
     },
@@ -120,7 +124,8 @@
             "longitude": -9.816285,
             "latitude": 30.841489
         },
-        "description": "Imsouane, this small surfing paradise, long kept 'secret' (for its unique waves and spots), a thousand miles from the seaside resorts of Agadir, Essaouira or Taghazout (complete guides to discover these last 2 online too! ), was therefore the ideal destination. And I confirm, if you dream of a quiet place, where your life is punctuated by the ocean, the waves and the tides, the bay of Imsouane is likely to please you a lot."
+        "description": "Imsouane, this small surfing paradise, long kept 'secret' (for its unique waves and spots), a thousand miles from the seaside resorts of Agadir, Essaouira or Taghazout (complete guides to discover these last 2 online too! ), was therefore the ideal destination. And I confirm, if you dream of a quiet place, where your life is punctuated by the ocean, the waves and the tides, the bay of Imsouane is likely to please you a lot.",
+        "imageName": "Imsouane"
     },
     {
         "name": "Sidi Kouaki",
