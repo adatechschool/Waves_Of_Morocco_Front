@@ -9,45 +9,52 @@ struct LandmarkDetail: View {
             VStack{
                 MapView(coordinate: landmark.coordinates.toCoordinates2d())
                     .ignoresSafeArea(edges: .top)
-                    .frame(height: 300)
+                    .frame(height: 200)
                 
                 CircleImage(image: landmark.image)
                     .offset(y: -130)
                     .padding(.bottom, -130)
                 
-                VStack {
-                    Text(landmark.name)
-                        .fontWeight(.semibold)
-                        .multilineTextAlignment(.center)
-                        .font(.title)
-                        .foregroundColor(.black)
-                    
-                    HStack {
-                        Text(String(landmark.country))
-                            .font(.subheadline)
+                    VStack {
+                        Text(landmark.name)
+                            .fontWeight(.semibold)
+                            .multilineTextAlignment(.center)
+                            .font(.title)
+                            .foregroundColor(.black)
+                        
+                        HStack {
+                            Text(String(landmark.country))
+                                .font(.subheadline)
+                            Spacer()
+                            Text(landmark.state)
+                                .font(.subheadline)
+                        }
+                        .padding()
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
                         Spacer()
-                        Text(landmark.continent)
+                        Divider()
+                        ScrollView{
+                        Text("About \(landmark.name)")
+                            .font(.title2)
+                        Spacer()
+                            HStack {
+                                Text("Danger")
+                                Spacer()
+                                Text(landmark.dangerous)
+                            }
+                            .font(.subheadline)
+                        Text(landmark.landmarkListDescription)
                             .font(.subheadline)
                             .multilineTextAlignment(.center)
+                            .padding()
+                        Spacer()
                     }
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                    Spacer()
-                    Divider()
-                ScrollView {
-                    Text("About \(landmark.name)")
-                        .font(.title2)
-                    Spacer()
-                    Text(landmark.landmarkListDescription)
-                        .font(.subheadline)
-                        .multilineTextAlignment(.center)
-                        .padding()
+                    .padding()
                 }
-                Spacer()
-            }
-            .padding()
+                .navigationTitle("Preview")
+                .navigationBarTitleDisplayMode(.inline)
         }
-
     }
 }
 

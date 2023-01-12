@@ -20,5 +20,6 @@ struct LandmarksList: View {
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
         LandmarksList()
+            .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
     }
 }
