@@ -10,7 +10,7 @@ struct Landmark: Decodable, Identifiable {
     let country: String
     let continent: String
     let id: Int
-    let dangerous: Int
+    let dangerous: String
     let isFeatured, isFavorite: Bool
     let state: String
     let coordinates: Coordinates
