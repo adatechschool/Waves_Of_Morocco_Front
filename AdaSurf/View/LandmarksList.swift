@@ -4,6 +4,7 @@
 //
 // Created by Karim Fraboulet on 07/01/2023.
 //
+
 import SwiftUI
 
 struct LandmarksList: View {
