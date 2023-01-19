@@ -35,16 +35,16 @@ struct LandmarkDetail: View {
                 .foregroundColor(.secondary)
                 Spacer()
                 Divider()
+                HStack {
+                    Text("Danger")
+                    Spacer()
+                    Text(landmark.dangerous)
+                }.padding()
                 ScrollView{
                     Text("About \(landmark.name)")
                         .font(.title2)
                     Spacer()
-                    HStack {
-                        Text("Danger")
-                        Spacer()
-                        Text(landmark.dangerous)
-                    }
-                    .font(.subheadline)
+         
                     Text(landmark.landmarkListDescription)
                         .font(.subheadline)
                         .multilineTextAlignment(.center)
