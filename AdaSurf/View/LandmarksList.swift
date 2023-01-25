@@ -1,8 +1,8 @@
 //
-//  LandmarksList.swift
-//  AdaSurf
+// LandmarksList.swift
+// AdaSurf
 //
-//  Created by Karim Fraboulet on 07/01/2023.
+// Created by Karim Fraboulet on 07/01/2023.
 //
 
 import SwiftUI
@@ -27,6 +27,5 @@ struct LandmarksList: View {
 struct LandmarkList_Previews: PreviewProvider {
     static var previews: some View {
         LandmarksList()
-            .previewDevice(PreviewDevice(rawValue: "iPhone SE (3rd generation)"))
     }
 }

@@ -6,56 +6,58 @@ struct LandmarkDetail: View {
 
     var body: some View {
     
-            VStack{
-                MapView(coordinate: landmark.coordinates.toCoordinates2d())
-                    .ignoresSafeArea(edges: .top)
-                    .frame(height: 200)
+        
+        VStack{
+            MapView(coordinate: landmark.coordinates.toCoordinates2d())
+                .ignoresSafeArea(edges: .top)
+                .frame(height: 200)
+            
+            CircleImage(image: landmark.image)
+                .offset(y: -130)
+                .padding(.bottom, -130)
+            
+            VStack {
+                Text(landmark.name)
+                    .fontWeight(.semibold)
+                    .multilineTextAlignment(.center)
+                    .font(.title)
+                    .foregroundColor(.black)
                 
-                CircleImage(image: landmark.image)
-                    .offset(y: -130)
-                    .padding(.bottom, -130)
-                
-                    VStack {
-                        Text(landmark.name)
-                            .fontWeight(.semibold)
-                            .multilineTextAlignment(.center)
-                            .font(.title)
-                            .foregroundColor(.black)
-                        
-                        HStack {
-                            Text(String(landmark.country))
-                                .font(.subheadline)
-                            Spacer()
-                            Text(landmark.state)
-                                .font(.subheadline)
-                        }
-                        .padding()
+                HStack {
+                    Text(String(landmark.country))
                         .font(.subheadline)
-                        .foregroundColor(.secondary)
-                        Spacer()
-                        Divider()
-                        ScrollView{
-                        Text("About \(landmark.name)")
-                            .font(.title2)
-                        Spacer()
-                            HStack {
-                                Text("Danger")
-                                Spacer()
-                                Text(landmark.dangerous)
-                            }
-                            .font(.subheadline)
-                        Text(landmark.landmarkListDescription)
-                            .font(.subheadline)
-                            .multilineTextAlignment(.center)
-                            .padding()
-                        Spacer()
-                    }
-                    .padding()
+                    Spacer()
+                    Text(landmark.state)
+                        .font(.subheadline)
                 }
-                .navigationTitle("Preview")
-                .navigationBarTitleDisplayMode(.inline)
+                .padding()
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+                Spacer()
+                Divider()
+                HStack {
+                    Text("Danger")
+                    Spacer()
+                    Text(landmark.dangerous)
+                }.padding()
+                ScrollView{
+                    Text("About \(landmark.name)")
+                        .font(.title2)
+                    Spacer()
+         
+                    Text(landmark.landmarkListDescription)
+                        .font(.subheadline)
+                        .multilineTextAlignment(.center)
+                        .padding()
+                    Spacer()
+                }
+                .padding()
+            }
+            .navigationTitle("Preview")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
+
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {

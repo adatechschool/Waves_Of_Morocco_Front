@@ -22,6 +22,7 @@
 		B73E7817295C75DB005D191A /* AdaSurfUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E7816295C75DB005D191A /* AdaSurfUITestsLaunchTests.swift */; };
 		B73E7824295C836D005D191A /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E7823295C836D005D191A /* CircleImage.swift */; };
 		B73E7826295C85E6005D191A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E7825295C85E6005D191A /* MapView.swift */; };
+		B781329A297019B300433E56 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7813299297019B300433E56 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		B73E7816295C75DB005D191A /* AdaSurfUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaSurfUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B73E7823295C836D005D191A /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		B73E7825295C85E6005D191A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B7813299297019B300433E56 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				B73E77FA295C75D9005D191A /* ContentView.swift */,
 				B734A838296586CD00AD9F9C /* LandmarkRow.swift */,
 				B71B0EC42969E4B8007182EB /* LandmarksList.swift */,
+				B7813299297019B300433E56 /* SwiftUIView.swift */,
 				613CF9CC296C58FD008CEABB /* LandmarkDetail.swift */,
 			);
 			path = View;
@@ -141,10 +144,10 @@
 		B73E77F7295C75D9005D191A /* AdaSurf */ = {
 			isa = PBXGroup;
 			children = (
-				B734A8372965868D00AD9F9C /* Model */,
-				B734A8362965867C00AD9F9C /* Ressources */,
 				B73E77F8295C75D9005D191A /* AdaSurfApp.swift */,
 				B734A8342965864500AD9F9C /* View */,
+				B734A8372965868D00AD9F9C /* Model */,
+				B734A8362965867C00AD9F9C /* Ressources */,
 				B73E77FC295C75DB005D191A /* Assets.xcassets */,
 				B73E77FE295C75DB005D191A /* AdaSurf.entitlements */,
 				B73E77FF295C75DB005D191A /* Preview Content */,
@@ -312,6 +315,7 @@
 				B73E7826295C85E6005D191A /* MapView.swift in Sources */,
 				B73E77F9295C75D9005D191A /* AdaSurfApp.swift in Sources */,
 				B73E7824295C836D005D191A /* CircleImage.swift in Sources */,
+				B781329A297019B300433E56 /* SwiftUIView.swift in Sources */,
 				613CF9CD296C58FD008CEABB /* LandmarkDetail.swift in Sources */,
 				B7251C5929657E200092BDA3 /* Landmark.swift in Sources */,
 				B734A839296586CD00AD9F9C /* LandmarkRow.swift in Sources */,
@@ -473,12 +477,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AdaSurf/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Waves of Morocco";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Sw;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -511,12 +517,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AdaSurf/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Waves of Morocco";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Sw;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
