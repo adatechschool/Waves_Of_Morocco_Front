@@ -12,6 +12,7 @@ struct DangerousHome: View {
     @State private var showingProfile = false
 
     var body: some View {
+        
         NavigationView {
             List {
                 PageView(pages: modelData.features.map { FeatureCard(landmark: $0) })
