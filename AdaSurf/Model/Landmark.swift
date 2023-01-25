@@ -10,20 +10,30 @@ struct Landmark: Decodable, Identifiable {
     let country: String
     let continent: String
     let id: Int
-    let dangerous: String
+    var isFeatured: Bool
     var isFavorite: Bool
     let state: String
     let coordinates: Coordinates
     let landmarkListDescription: String
-    var imageName: String
-    var image: Image {
-            Image(imageName)
-        }
     
-
+    var dangerous: Dangerous
+    enum Dangerous: String, CaseIterable, Codable {
+        case begginer = "Begginer"
+        case intermediate = "Intermediate"
+        case expert = "Expert"
+    }
+    
+    private var imageName: String
+    var image: Image {
+        Image(imageName)
+    }
+    var featureImage: Image? {
+        isFeatured ? Image(imageName + "_feature") : nil
+    }
+    
     enum CodingKeys: String, CodingKey {
         case name
-        case country, continent, id, dangerous, isFavorite, state, coordinates
+        case country, continent, id, dangerous, isFeatured, isFavorite, state, coordinates
         case landmarkListDescription = "description"
         case imageName
     }

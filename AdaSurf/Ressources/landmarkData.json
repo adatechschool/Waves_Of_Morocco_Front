@@ -4,7 +4,8 @@
         "country": "Morocco",
         "continent": "North Africa",
         "id": 1001,
-        "dangerous": "🏄‍♂️ 🏄‍♂️",
+        "dangerous": "Begginer",
+        "isFeatured": true,
         "isFavorite": true,
         "state": "Marrakesh-Safi",
         "coordinates": {
@@ -19,8 +20,9 @@
         "country": "Morocco",
         "continent": "North Africa",
         "id": 1002,
-        "dangerous": " 🏄‍♂️ 🏄‍♂️ 🏄‍♂️",
-        "isFavorite": true,
+        "dangerous": "Intermediate",
+        "isFeatured": false,
+        "isFavorite": false,
         "state": "Marrakesh-Safi",
         "coordinates": {
             "longitude": -9.759504,
@@ -34,7 +36,8 @@
         "country": "Morocco",
         "continent": "North Africa",
         "id": 1003,
-        "dangerous": " 🏄‍♂️ 🏄‍♂️ 🏄‍♂️ 🏄‍♂️ 🏄‍♂️",
+        "dangerous": "Begginer",
+        "isFeatured": false,
         "isFavorite": true,
         "state": "Souss-Massa",
         "coordinates": {
@@ -49,7 +52,8 @@
         "country": "Morocco",
         "continent": "North Africa",
         "id": 1004,
-        "dangerous": " 🏄‍♂️ 🏄‍♂️ 🏄‍♂️",
+        "dangerous": "Intermediate",
+        "isFeatured": true,
         "isFavorite": true,
         "state": "Souss-Massa",
         "coordinates": {
@@ -64,7 +68,8 @@
         "country": "Morocco",
         "continent": "North Africa",
         "id": 1005,
-        "dangerous": " 🏄‍♂️ 🏄‍♂️ 🏄‍♂️ 🏄‍♂️",
+        "dangerous": "Expert",
+        "isFeatured": false,
         "isFavorite": false,
         "state": "Souss-Massa",
         "coordinates": {
@@ -79,7 +84,8 @@
         "country": "Morocco",
         "continent": "North Africa",
         "id": 1006,
-        "dangerous": " 🏄‍♂️ 🏄‍♂️ 🏄‍♂️ 🏄‍♂️ 🏄‍♂️",
+        "dangerous": "Begginer",
+        "isFeatured": false,
         "isFavorite": false,
         "state": "Souss-Massa",
         "coordinates": {
@@ -94,7 +100,8 @@
         "country": "Morocco",
         "continent": "North Africa",
         "id": 1007,
-        "dangerous": " 🏄‍♂️",
+        "dangerous": "Expert",
+        "isFeatured": true,
         "isFavorite": false,
         "state": "Souss-Massa",
         "coordinates": {
@@ -109,7 +116,8 @@
         "country": "Morocco",
         "continent": "North Africa",
         "id": 1008,
-        "dangerous": " 🏄‍♂️ 🏄‍♂️ 🏄‍♂️",
+        "dangerous": "Intermediate",
+        "isFeatured": false,
         "isFavorite": false,
         "state": "Souss-Massa",
         "coordinates": {
@@ -124,7 +132,8 @@
         "country": "Morocco",
         "continent": "North Africa",
         "id": 1009,
-        "dangerous": " 🏄‍♂️ 🏄‍♂️ 🏄‍♂️ 🏄‍♂️ 🏄‍♂️",
+        "dangerous": "Expert",
+        "isFeatured": false,
         "isFavorite": false,
         "state": "Marrakech-Tensift-Al Haouz",
         "coordinates": {
@@ -139,7 +148,8 @@
         "country": "Morocco",
         "continent": "North Africa",
         "id": 1010,
-        "dangerous": " 🏄‍♂️ 🏄‍♂️",
+        "dangerous": "Intermediate",
+        "isFeatured": false,
         "isFavorite": false,
         "state": "Dakhla-Oued Ed-Dahab",
         "coordinates": {
@@ -154,7 +164,8 @@
         "country": "Morocco",
         "continent": "North Africa",
         "id": 1011,
-        "dangerous": " 🏄‍♂️",
+        "dangerous": "Expert",
+        "isFeatured": false,
         "isFavorite": false,
         "state": "Casablanca-Settat",
         "coordinates": {

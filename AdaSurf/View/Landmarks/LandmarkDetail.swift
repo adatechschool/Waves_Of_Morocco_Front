@@ -39,11 +39,7 @@ struct LandmarkDetail: View {
                 .foregroundColor(.secondary)
                 Spacer()
                 Divider()
-                HStack {
-                    Text("Danger")
-                    Spacer()
-                    Text(landmark.dangerous)
-                }.padding()
+            
                 ScrollView{
                     Text("About \(landmark.name)")
                         .font(.title2)
