@@ -8,11 +8,13 @@
 import SwiftUI
 
 @main
+struct LandmarksApp: App {
+    @StateObject private var modelData = ModelData()
 
-struct AdaSurfApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(modelData)
         }
     }
 }
