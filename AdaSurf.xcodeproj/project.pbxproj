@@ -144,10 +144,10 @@
 		B73E77F7295C75D9005D191A /* AdaSurf */ = {
 			isa = PBXGroup;
 			children = (
-				B734A8372965868D00AD9F9C /* Model */,
-				B734A8362965867C00AD9F9C /* Ressources */,
 				B73E77F8295C75D9005D191A /* AdaSurfApp.swift */,
 				B734A8342965864500AD9F9C /* View */,
+				B734A8372965868D00AD9F9C /* Model */,
+				B734A8362965867C00AD9F9C /* Ressources */,
 				B73E77FC295C75DB005D191A /* Assets.xcassets */,
 				B73E77FE295C75DB005D191A /* AdaSurf.entitlements */,
 				B73E77FF295C75DB005D191A /* Preview Content */,
