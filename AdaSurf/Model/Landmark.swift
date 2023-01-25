@@ -11,7 +11,7 @@ struct Landmark: Decodable, Identifiable {
     let continent: String
     let id: Int
     let dangerous: String
-    let isFeatured, isFavorite: Bool
+    var isFavorite: Bool
     let state: String
     let coordinates: Coordinates
     let landmarkListDescription: String
@@ -23,11 +23,11 @@ struct Landmark: Decodable, Identifiable {
 
     enum CodingKeys: String, CodingKey {
         case name
-        case country, continent, id, dangerous, isFeatured, isFavorite, state, coordinates
+        case country, continent, id, dangerous, isFavorite, state, coordinates
         case landmarkListDescription = "description"
         case imageName
     }
-}
+} 
 
 
 
