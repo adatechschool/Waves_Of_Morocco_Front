@@ -11,8 +11,8 @@ struct ProfileEditor: View {
     @Binding var profile: Profile
 
     var dateRange: ClosedRange<Date> {
-        let min = Calendar.current.date(byAdding: .year, value: -1, to: profile.goalDate)!
-        let max = Calendar.current.date(byAdding: .year, value: 1, to: profile.goalDate)!
+        let min = Calendar.current.date(byAdding: .year, value: -1, to: profile.day)!
+        let max = Calendar.current.date(byAdding: .year, value: 1, to: profile.day)!
         return min...max
     }
 
@@ -29,18 +29,18 @@ struct ProfileEditor: View {
             }
 
             VStack(alignment: .leading, spacing: 20) {
-                Text("Seasonal Photo").bold()
+                Text("Level").bold()
 
-                Picker("Seasonal Photo", selection: $profile.seasonalPhoto) {
-                    ForEach(Profile.Season.allCases) { season in
-                        Text(season.rawValue).tag(season)
+                Picker("Level", selection: $profile.level) {
+                    ForEach(Profile.Level.allCases) { level in
+                        Text(level.rawValue).tag(level)
                     }
                 }
                 .pickerStyle(.segmented)
             }
 
-            DatePicker(selection: $profile.goalDate, in: dateRange, displayedComponents: .date) {
-                Text("Goal Date").bold()
+            DatePicker(selection: $profile.day, in: dateRange, displayedComponents: .date) {
+                Text("Date").bold()
             }
         }
     }

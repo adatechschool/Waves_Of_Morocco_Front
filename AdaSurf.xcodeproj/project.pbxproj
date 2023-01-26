@@ -170,14 +170,14 @@
 		B734A8342965864500AD9F9C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B7813299297019B300433E56 /* SwiftUIView.swift */,
+				61B2E74829817D25005BC13D /* LandingPage.swift */,
 				61B2E740298178BF005BC13D /* Profiles */,
 				61B2E736298174AD005BC13D /* Dangerous */,
 				61B2E72B298149F9005BC13D /* PageView */,
 				61B2E72A298144A3005BC13D /* Helpers */,
 				61B2E72929814480005BC13D /* Landmarks */,
 				B73E77FA295C75D9005D191A /* ContentView.swift */,
-				B7813299297019B300433E56 /* SwiftUIView.swift */,
-				61B2E74829817D25005BC13D /* LandingPage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";

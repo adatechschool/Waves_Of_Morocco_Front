@@ -10,16 +10,16 @@ import Foundation
 struct Profile {
     var username: String
     var prefersNotifications = true
-    var seasonalPhoto = Season.winter
-    var goalDate = Date()
+    var level = Level.begginer
+    var day = Date()
 
-    static let `default` = Profile(username: "dede_karim")
+    static let `default` = Profile(username: "Dede & Le K & KRRRRIS & Nicoco")
 
-    enum Season: String, CaseIterable, Identifiable {
-        case spring = "🌷"
-        case summer = "🌞"
-        case autumn = "🍂"
-        case winter = "☃️"
+    enum Level: String, CaseIterable, Identifiable {
+        case begginer = "🏄🏽‍♀️"
+        case intermediate = "🏄🏽‍♀️🏄🏽‍♀️"
+        case expert = "🏄🏽‍♀️🏄🏽‍♀️🏄🏽‍♀️"
+        case goat = "🏄🏽‍♀️🏄🏽‍♀️🏄🏽‍♀️🏄🏽‍♀️"
 
         var id: String { rawValue }
     }

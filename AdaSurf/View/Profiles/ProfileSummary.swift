@@ -13,17 +13,30 @@ struct ProfileSummary: View {
 
     var body: some View {
         ScrollView {
-            VStack(alignment: .leading, spacing: 10) {
+            VStack() {
                 Text(profile.username)
+                    .multilineTextAlignment(.center)
                     .bold()
                     .font(.title)
+                Image("Image")
+                    .resizable()
+                    .frame(width: 300, height: 300)
+                    .clipShape(Circle())
+                    .shadow(radius: 7)
+                    .overlay {
+                        Circle().stroke(.white, lineWidth: 4)
+                    }
+                Spacer()
 
-                Text("Notifications: \(profile.prefersNotifications ? "On": "Off" )")
-                Text("Seasonal Photos: \(profile.seasonalPhoto.rawValue)")
-                Text("Goal Date: ") + Text(profile.goalDate, style: .date)
-
+                VStack{
                 Divider()
-
+                    Text("Notifications: \(profile.prefersNotifications ? "On": "Off" )")
+                Spacer()
+                Text("Level: \(profile.level.rawValue)")
+                Text("Date: ") + Text(profile.day, style: .date)
+                
+                Divider()
+                }
 
             }
             .padding()
